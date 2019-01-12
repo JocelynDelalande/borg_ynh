@@ -22,12 +22,12 @@ ynh_abort_if_errors
 export app=$YNH_APP_INSTANCE_NAME
 
 # Retrieve arguments
-ynh_export server ssh_user passphrase on_calendar conf data apps
+ynh_export server ssh_user passphrase on_calendar conf data apps repository_path
 
 #=================================================
 # STORE SETTINGS FROM MANIFEST
 #=================================================
-ynh_save_args server ssh_user passphrase on_calendar conf data apps
+ynh_save_args server ssh_user passphrase on_calendar conf data apps repository_path
 
 #=================================================
 # CONFIGURE BACKPORTS

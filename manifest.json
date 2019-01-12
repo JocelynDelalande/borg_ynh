@@ -45,6 +45,14 @@
                     "fr": "Indiquez une phrase de passe forte que vous garderez précieusement si vous voulez être en mesure d'utiliser vos sauvegardes"
                 }
             },
+            {
+                "name": "repository_path",
+                "ask": {
+                    "en": "Indicate the repository path on remote borg server (keep default if using \"Borg Server\" app on remote side).",
+                    "fr": "Indiquez le chemin du dépôt borg sur le serveur (laisser par défaut si l'app \"Borg Server\" est utilisée côté serveur)."
+                },
+                "default": "~/backup"
+            },
 			{
 				"name": "conf",
 				"type": "boolean",

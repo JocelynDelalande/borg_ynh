@@ -39,3 +39,7 @@ if grep "borg.timer" /etc/yunohost/services.yml > /dev/null ; then
     systemctl enable $app.timer
     systemctl start $app.timer
 fi
+
+# MIGRATION : store repo path
+
+ynh_app_setting_set $app repository_path ${!var}

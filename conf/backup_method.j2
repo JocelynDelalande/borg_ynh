@@ -8,7 +8,7 @@ if grep "{{ server }}" ~/.ssh/known_hosts; then
 else
     BORG_RSH="ssh -i /root/.ssh/id_{{ app }}_ed25519 -oStrictHostKeyChecking=no "
 fi
-repo=ssh://{{ ssh_user }}@{{ server }}/~/backup   #$4
+repo=ssh://{{ ssh_user }}@{{ server }}{{ repository_path }}   #$4
 
 do_need_mount() {
     true
